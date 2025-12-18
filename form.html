@@ -1,0 +1,152 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my picture form</title>
+    <link rel="icon" type="image/jpg" href="file.jpg">
+    <style>
+        body{
+    background-image:url("file.jpg");
+    background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment:fixed ;
+    height: auto;
+    width: auto;
+padding: 70px;
+
+
+}
+img{
+    height: 100px;
+    width: none;
+    border: 1px solid;
+    float: right;
+    border-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+
+    
+}
+h1{
+    text-shadow: 5px 5px 5px; color: rgba(247, 71, 209, 0.808);
+    
+    border: 2px solid;
+    border-radius: 15px;
+    border-bottom-left-radius: 1px;
+      border-top-right-radius: 1px;
+    margin:auto ;
+}
+    h1::first-letter{
+      color:rgb(160, 63, 163);
+      font-size: 2em;
+      font-style: italic;
+    }
+    
+form{
+      border: 5px solid;
+    padding: 100 px;   
+    border-color: rgba(190, 57, 168, 0.342);
+    margin: 5px;   
+}
+p{
+  color: rgb(73, 9, 78);
+  font-style: italic;
+  font-size: small;
+  font-weight: 100;
+  text-shadow: 3px 5px 3px;
+  }
+  p::first-line{
+    color: rgb(173, 60, 117);
+  }
+ p:hover{
+  background-color:rgb(201, 40, 187) ;
+  font-size: 1em;
+  
+ }
+ p::selection{
+  color:rgba(209, 13, 150, 0.534);
+ }
+ #inp{
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(142, 185, 185);
+  color: rgb(139, 12, 133);
+ }
+ #int{
+  border: none;
+  border-radius: 10px;
+   background-color: rgb(142, 185, 185);
+  color: rgb(139, 12, 133);
+ }
+ #int:hover{
+  background-color: aqua;
+  font-size: 15px;
+ }
+ #inp:hover{
+  background-color: aqua;
+  font-size: 15px;
+ }
+
+    </style>
+</head>
+<body>
+    <h1 align="center"> SALIF FORM</h1>
+    <hr>
+    <form action="index.php" method="post">
+    <label for="username">username:</label>
+    <input type="text" id="username" required><br><br>
+    <label for="password">password:</label>
+    <input type="password" id="password" minlength="6" maxlength="6" required><br><br>
+    <label for="email">email:</label>
+    <input type="email" id="email" placeholder="salifbeteye@gmail.com" required><br><br>
+    <label for="phone number">phone number:</label>
+    <input type="tel" id="phone number" placeholder="+237" pattern="[652]{3}-[093]{3}-[202]{3}"><br><br>
+<label for="bday">birthday:</label>
+<input type="date" id="bday"><br><br>
+<label for="title">title:</label>
+<label for="mr.">mr.</label>
+<input type="radio" id="mr." value="mr." name="title">
+<label for="mrs">mrs</label>
+<input type="radio" id="mrs." value="mrs." name="title">
+<label for="me.">me.</label>
+<input type="radio" id="me." value="me." name="title"><br><br>
+<label for="momo me">momo me</label>
+<select id="momo me">
+    <option value="MTN">MTN</option>
+    <option value="orange">orange</option>
+    <option value="camtel">camtel</option>
+</select><br>
+<label for="like">like</label>
+<input type="checkbox" id="like"><br>
+<label for="comment">comment</label><br>
+<textarea id="comment" rows="3" cols="25"></textarea><br>
+     <input type="reset" id="inp">
+   <button title="fuck you" id="int">submit</button>
+   </form>
+   
+   <img src="file.jpg" alt="">
+   <p>
+    Lorem, ipsum dolor sit amet consectetur
+    adipisicing elit. Quas, aut. Quibusdam
+    distinctio, voluptatum accusantium at
+    ab excepturi aperiam eaque. Debitis,
+    iste! Hic porro natus tempore quaerg
+     Ratione laborum esse optio!
+   </p>
+   <script>
+    //accessing the button through an ID
+    let myint= document.getElementById("int")
+    // adding an event to the button
+    myint.addEventListener("click",function(){
+        alert("welcome to the world")
+        //DON CSS
+       // myint.style.backgroundColor="cyan"
+       // myint.style.color="violet"
+    })
+   </script>
+
+</body>
+</html>
